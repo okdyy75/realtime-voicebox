@@ -66,7 +66,7 @@ function App() {
     !speakersLoading && !audioDevicesLoading && (
       <>
         <div className="container">
-          <main className="max-w-screen-md m-4 md:m-8 p-6 bg-white rounded-lg shadow-md">
+          <main className="max-w-3xl m-4 p-4 bg-white rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-6">リアルタイムVOICEBOX</h2>
             <div className="space-y-6">
               {/* スピーカー選択 */}

@@ -33,7 +33,7 @@ const AudioDeviceList = ({
 
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid md:grid-cols-2 gap-4">
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
             入力デバイス（変更不可。端末から変更してください）
