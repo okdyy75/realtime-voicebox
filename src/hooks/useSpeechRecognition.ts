@@ -14,7 +14,7 @@ export const useSpeechRecognition = () => {
     const recognition = new SpeechRecognition()
     recognition.lang = 'ja-JP'
     recognition.continuous = true // 継続的に音声認識を行う
-    recognition.interimResults = true // 途中結果でも取得する
+    // recognition.interimResults = true // 途中結果でも取得する
 
     recognition.onerror = () => {
       setError(new Error('音声入力が許可されていません。'))
