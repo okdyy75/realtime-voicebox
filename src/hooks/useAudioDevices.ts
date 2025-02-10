@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
 
-export const useAudioDevices = (): {
+type useAudioDevicesProps = {
   inputAudioDevices: MediaDeviceInfo[]
   outputAudioDevices: MediaDeviceInfo[]
   loading: boolean
   error: Error | null
-} => {
+}
+
+export const useAudioDevices = (): useAudioDevicesProps => {
   const [inputAudioDevices, setInputAudioDevices] = useState<MediaDeviceInfo[]>([])
   const [outputAudioDevices, setOutputAudioDevices] = useState<MediaDeviceInfo[]>([])
   const [loading, setLoading] = useState<boolean>(true)
