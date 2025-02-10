@@ -43,10 +43,9 @@ const AudioDeviceList = ({
             onChange={handleInputAudioDevice}
             className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm bg-gray-100 cursor-not-allowed"
           >
-            <option disabled value=""></option>
             {inputAudioDevices.map((device: MediaDeviceInfo) => (
               <option disabled key={device.deviceId} value={device.deviceId}>
-                {device.label || `マイク ${device.deviceId}`}
+                {device.label}
               </option>
             ))}
           </select>
@@ -59,10 +58,9 @@ const AudioDeviceList = ({
             onChange={handleOutputAudioDevice}
             className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm"
           >
-            <option value=""></option>
             {outputAudioDevices.map((device: MediaDeviceInfo) => (
               <option key={device.deviceId} value={device.deviceId}>
-                {device.label || `スピーカー ${device.deviceId}`}
+                {device.label}
               </option>
             ))}
           </select>
