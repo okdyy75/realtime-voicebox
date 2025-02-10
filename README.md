@@ -21,6 +21,8 @@ npm run preview
 open http://localhost:4173/
 ```
 
+https://github.com/user-attachments/assets/0e79ab2d-8bf5-47c9-95d9-3b723ff8e6b7
+
 ### 音声認識のポイント
 - 連続で喋ると上手く音声認識できません。一度VOICEVOXの音声が終わってから話してください
 - はっきりハキハキと喋ると音声認識の精度が高くなります
@@ -34,7 +36,6 @@ open http://localhost:4173/
 4. 音声入力開始ボタンを押してください
 5. 終了する場合は再度音声入力停止ボタンを押してください
 
-
 ![リアルタイムVOICEBOX](./docs/assets/realtime_voicebox_web.png)
 
 ### 利用規約
@@ -45,14 +46,12 @@ open http://localhost:4173/
 ### FAQ
 - Q1. 入力デバイス、出力デバイスが表示されません。
   - ブラウザからマイクの入力を許可してください
-    ![マイクの入力許可](./docs/assets/device_permission_error.png)
+  - <img src="./docs/assets/device_permission_error.png" width="480">
 - Q2. 入力デバイスが選択できません
   - Web Speech APIの仕様上、ブラウザ側でマイクを選択できないのでお使いの端末（PC、スマホ）から変更してください
 - Q3. 「キャラクターの取得に失敗しました。VOICEBOX APIの接続に失敗しました。」と表示されます
   - VOICEVOXの起動が必要です。[公式サイト](https://voicevox.hiroshiba.jp/)からDLして起動してください。
     ※VOICEOBOX APIのポートを変更している場合はデフォルトポートの50021を指定してください
-
-
 
 ## 開発者向け
 
