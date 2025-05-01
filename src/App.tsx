@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
-import { useSpeakers } from '@/hooks/voicebox/useSpeakers'
+import { useSpeakers } from '@/hooks/voicevox/useSpeakers'
 import { useAudioDevices } from './hooks/useAudioDevices'
-import SpeakerList from '@/components/voicebox/SpeakerList'
+import SpeakerList from '@/components/voicevox/SpeakerList'
 import AudioDeviceList from './components/AudioDeviceList'
 import { useSpeechRecognition } from './hooks/useSpeechRecognition'
-import { useSynthesize } from './hooks/voicebox/useSynthesize'
+import { useSynthesize } from './hooks/voicevox/useSynthesize'
 
 function App() {
   // 初期値
@@ -67,7 +67,7 @@ function App() {
       <>
         <div className="container">
           <main className="max-w-3xl m-4 p-4 bg-white rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold mb-6">リアルタイムVOICEBOX</h2>
+            <h2 className="text-2xl font-bold mb-6">リアルタイムVOICEVOX</h2>
             <div className="space-y-6">
               {/* スピーカー選択 */}
               <div className="space-y-2">
