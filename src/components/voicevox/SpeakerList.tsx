@@ -1,4 +1,4 @@
-import { Speaker } from '@/types/voicebox'
+import { Speaker } from '@/types/voicevox'
 import { useEffect, useState } from 'react'
 
 type SpeakerListProps = {

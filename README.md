@@ -1,5 +1,4 @@
-
-# リアルタイムVOICEBOX
+# リアルタイムVOICEVOX
 Web Speech APIとVOICEBOXを利用したリアルタイム音声変換ツールです  
 音声認識はWeb Speech APIに依存しているため精度はあまり高くありません。
 

@@ -1,19 +1,19 @@
-import { AudioQueryParams, SynthesisParams } from '@/types/voicebox'
+import { AudioQueryParams, SynthesisParams } from '@/types/voicevox'
 
 const endpoint = 'http://localhost:50021'
 
 const callApi = async (url: string, options: RequestInit = {}) => {
   const response = await fetch(url, options)
     .catch((err: Error) => {
-      throw new Error(`VOICEBOX APIの接続に失敗しました。\n[message: ${err.message}]`)
+      throw new Error(`VOICEVOX APIの接続に失敗しました。\n[message: ${err.message}]`)
     })
   if (!response.ok) {
-    throw new Error(`VOICEBOX APIのリクエストに失敗しました。\n[message: ${response.statusText}][status_code: ${response.status}]`)
+    throw new Error(`VOICEVOX APIのリクエストに失敗しました。\n[message: ${response.statusText}][status_code: ${response.status}]`)
   }
   return response
 }
 
-export const voiceboxApi = {
+export const voicevoxApi = {
   fetchSpeakers: async () => {
     const response = await callApi(`${endpoint}/speakers`)
     return response.json()

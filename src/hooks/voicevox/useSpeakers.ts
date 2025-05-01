@@ -1,5 +1,5 @@
-import { voiceboxApi } from '@/services/voiceboxApi'
-import { Speaker } from '@/types/voicebox'
+import { voicevoxApi } from '@/services/voicevoxApi';
+import { Speaker } from '@/types/voicevox';
 import { useEffect, useState } from 'react'
 
 export const useSpeakers = () => {
@@ -10,7 +10,7 @@ export const useSpeakers = () => {
   useEffect(() => {
     const fetchSpeakers = async () => {
       try {
-        const data = await voiceboxApi.fetchSpeakers()
+        const data = await voicevoxApi.fetchSpeakers();
         setSpeakers(data)
       } catch (err) {
         setError(err as Error)
